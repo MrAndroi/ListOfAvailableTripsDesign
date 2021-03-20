@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Car_Share_Project</string>
+
+    <string-array name="destinations">
+
+        <item>Amman</item>
+        <item>Irbid</item>
+        <item>Aqaba</item>
+        <item>Mafraq</item>
+        <item>Al-balqa</item>
+        <item>Al-karak</item>
+        <item>Madaba</item>
+        <item>Maan</item>
+
+
+    </string-array>
+
+
+</resources>
