@@ -17,7 +17,6 @@ public class TripsAdapter extends RecyclerView.Adapter<TripsAdapter.ViewHolder> 
      */
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView driverName;
-        private final TextView carColor;
         private final TextView tripTime;
         private final TextView carType;
 
@@ -26,7 +25,6 @@ public class TripsAdapter extends RecyclerView.Adapter<TripsAdapter.ViewHolder> 
             // Define click listener for the ViewHolder's View
 
             driverName = (TextView) view.findViewById(R.id.tvTripDriver);
-            carColor = (TextView) view.findViewById(R.id.tvCarColor);
             tripTime = (TextView) view.findViewById(R.id.tvTripTime);
             carType = (TextView) view.findViewById(R.id.tvCarType);
         }
@@ -60,7 +58,6 @@ public class TripsAdapter extends RecyclerView.Adapter<TripsAdapter.ViewHolder> 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
         viewHolder.driverName.setText(tripItem.getDriverName());
-        viewHolder.carColor.setText(tripItem.getCarColor());
         viewHolder.carType.setText(tripItem.getCarType());
         viewHolder.tripTime.setText(tripItem.getTripTime());
     }

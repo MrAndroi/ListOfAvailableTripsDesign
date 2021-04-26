@@ -31,19 +31,17 @@ public class MainActivity extends AppCompatActivity {
         binding.autoCompleteText.setAdapter(adapter);
         binding.autoCompleteText2.setAdapter(adapter);
 
-        Trip[] trips = {
-                new Trip("Sami","22/4/2021 - 4am","BMW x5","Black"),
-                new Trip("Mohmmad","22/5/2021 - 2pm","Toyota corola","white"),
-                new Trip("Rami","14/2/2021 - 1am","Huenday accent","blue"),
-                new Trip("Sami","22/4/2021 - 4am","BMW x5","Black"),
-                new Trip("Sami","22/4/2021 - 4am","BMW x5","Black"),
 
+        Trip[] trips = {
+                new Trip("Sami","22/4/2021 - 4am","BMW x5"),
+                new Trip("Mohmmad","22/5/2021 - 2pm","Toyota corola"),
+                new Trip("Rami","14/2/2021 - 1am","Huenday accent"),
+                new Trip("Sami","22/4/2021 - 4am","BMW x5"),
+                new Trip("Sami","22/4/2021 - 4am","BMW x5"),
         };
 
         TripsAdapter adapter1 = new TripsAdapter(trips);
         binding.rvAvailableTrips.setAdapter(adapter1);
-
-
 
     }
 }
